@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/nivo-slider.css" type="text/css" media="screen" />
+
+    <link rel="icon" href="/img/favicon.png" type="image/x-png">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main_wrap header_bg">
+        <div class="wrap">
+            <header>
+                <div id="header">
+                    <h2>Home Page</h2>
+                    <p>Subtitle Goes Here</p>
+                </div>
+            </header>
+        </div>
+    </div>
+          
+    <div id="sticker">
+        <div class="main_wrap menu_bg">
+            <div class="wrap">
+                <nav>
+                    <ul id="menu">
+                        <li title="Home"><a href="/index.html" class="home">Home</a></li>
+                        <li title="Inside"><a href="inside.html" class="inside">Inside</a></li>
+                        <li  title="Menu Item"><a href="#" class="menuitem1">Menu Item &raquo;</a>
+                            <ul>
+                                <li><a href="#">Menu Item</a></li>
+                                <li><a href="#">Menu Item</a></li>
+                                <li><a href="#">Menu Item &raquo;</a>
+                                    <ul>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                        <li><a href="#">Menu Item</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Menu Item</a></li>
+                                <li><a href="#">Menu Item</a></li>
+                                <li><a href="#">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li title="Menu Item"><a href="#" class="menuitem2">Menu Item</a></li>
+                        <li title="Menu Item"><a href="#" class="menuitem3">Menu Item</a></li>
+                        <li title="Menu Item"><a href="#" class="menuitem4">Menu Item</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_wrap section_bg">
+        <div class="wrap">
+            <section>
+                <div id="slider_wrap">
+                    <div class="slider-wrapper theme-dark">
+                        <div id="slider" class="nivoSlider">
+                            <img src="/img/toystory.jpg" data-thumb="/img/toystory.jpg" alt="" />
+                        
+                            <a href="#"><img src="/img/up.jpg" 
+                            data-thumb="/img/up.jpg" alt="" title="This is an example of a caption" /></a>
+                            
+                            <img src="/img/walle.jpg" data-thumb="/img/walle.jpg" alt="" 
+                            data-transition="slideInLeft" />
+                
+                            <img src="/img/Images.JPG" alt="" data-transition="slideInRight" 
+                            data-thumb="/img/Images.JPG" title="Airtel Sim Replesment">
+                        
+                            <img src="/img/nemo.jpg" data-thumb="/img/nemo.jpg" alt="" title="#htmlcaption" />
+                        </div>
+                        <div id="htmlcaption" class="nivo-html-caption">
+                            <b>This</b> example of <em>HTML</em> caption with <a href="#">link</a> 
+                        </div>
+                    </div>
+                
+                    <script type="text/javascript" src="/Js/jquery-1.9.0.min.js"></script>
+                    <script type="text/javascript" src="/Js/jquery.nivo.slider.js"></script>
+                
+                    <script type="text/javascript">
+                        $(window).load(function(){
+                            $('#slider').nivoSlider();
+                        });
+                    </script>
+
+                    <script type="text/javascript">
+                    $(document).ready(function() {
+                        var s = $("#sticker");
+                        var pos = s.position();					   
+                        $(window).scroll(function() {
+                            var windowpos = $(window).scrollTop();
+                            if (windowpos >= pos.top) {
+                                s.addClass("stick");
+                            } else {
+                                s.removeClass("stick");	
+                            }
+                        });
+                    });
+                    </script>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <div class="main_wrap content_bg">
+        <div class="wrap">
+            <div id="content_wrapper">
+                <div id="article">
+                    <article>
+                        <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                    <div id="img_wrapper">
+                            <img src="/img/flower.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri 
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                    <div id="img_wrapper">
+                            <img src="/img/flower.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri[...]</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                    <div id="img_wrapper">
+                            <img src="/img/flower.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri[...]</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h2>Lorem ipsum dolor sit amet, consectetuer</h2>
+                    <div id="img_wrapper">
+                            <img src="/img/flower.jpg" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                            elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                            lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                            autem vel eum iriure dolor in hendreri[...]</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="aside_wrapper">
+                    <aside>
+                        <div id="aside">
+                            <h2>Sidebar Heading:</h2>
+                            <ul>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div id="aside">
+                            <h2>Sidebar Heading:</h2>
+                            <ul>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div id="aside">
+                            <h2>Sidebar Heading:</h2>
+                            <ul>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div id="aside">
+                            <h2>Sidebar Heading:</h2>
+                            <ul>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                                <li><a href="#">List Item</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_wrap footer_bg">
+        <div class="wrap">
+            <footer>
+                <p>&copy; All Right Reserved By-Shamim-Hossain-bd.com</p>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+</html>
